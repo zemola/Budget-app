@@ -50,18 +50,6 @@ class ExpendituresController < ApplicationController
       end
     end
   end
-  # PATCH/PUT /expenditures/1 or /expenditures/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @expenditure.update(expenditure_params)
-  #       format.html { redirect_to expenditure_url(@expenditure), notice: "Expenditure was successfully updated." }
-  #       format.json { render :show, status: :ok, location: @expenditure }
-  #     else
-  #       format.html { render :edit, status: :unprocessable_entity }
-  #       format.json { render json: @expenditure.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
 
   # DELETE /expenditures/1 or /expenditures/1.json
   def destroy
