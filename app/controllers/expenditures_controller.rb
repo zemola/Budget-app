@@ -17,4 +17,22 @@ class ExpendituresController < ApplicationController
     @category = Category.find(params[:category_id])
     @expenditure = Expenditure.new
   end
+
+  def create
+    @expenditure = Expenditure.new(expenditure_params)
+    @expenditure.user_id = current_user.id
+    @expenditure.category_id = Category.find_by_id(params[:category_id]).id
+    respond_to do |format|
+      if @expenditure.save
+        format.html do
+          redirect_to category_expenditures_path(@expenditure.category_id),
+                      notice: 'expenditure was successfully created.'
+        end
+        format.json { render :show, status: :created, location: @expenditure }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @expenditure.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 end
