@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+<div class="container-sm">
+<div class="exp container-sm">
+ <%= link_to categories_path, class: "icon-back" do %>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg>
+ <%end%>
+  <div class="heading-exp">
+    <h1 >Expenditures</h1>
+  </div>
+</div>
+<div id="expenditures">
+<div class="category-name container-sm">
+    <p> Category:
+    <%= image_tag example_img(@category), class: "cate-img" %>
+    </p>
+  <div>
+      <p>
+      CATEGORY:
+      <%= @category.name%>
+      </p>
+      <p>Total:$<%= @total_amount%> </p>
+  </div>
+</div>
+  <% @expenditures.each do |expenditure| %>
+    <%= render expenditure %>
+  <% end %>
+</div>
+</div>
+<div class="category-bottom">
+<%= link_to "Add New expenditure", new_category_expenditure_path, class: "btn"%>
+</div>
