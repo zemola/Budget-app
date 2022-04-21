@@ -13,3 +13,193 @@
  *= require_tree .
  *= require_self
  */
+.category-name {
+  color: #434c55;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  border-style: none !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
+    rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px,
+    rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+#categories {
+  border: 1px solid black;
+}
+
+.heading {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 4px;
+}
+
+.parent {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.notice,
+.alert {
+  display: none;
+}
+
+.navbar-nav {
+  background-color: aqua;
+  width: auto;
+}
+
+#user_name,
+#user_email,
+#user_password,
+#user_password_confirmation {
+  width: 100%;
+  margin: 5px;
+  padding: 0;
+}
+
+.login,
+.signup {
+  width: 100px;
+  margin: 2px;
+}
+
+.register,
+.loginpage,
+.category {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3175be;
+}
+
+.footer {
+  text-align: center;
+}
+
+.cate,
+.heading-cate {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.cate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-page {
+  margin: 2px;
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+  border-style: none !important;
+  outline: none;
+}
+
+.render-list,
+.cate-name {
+  display: flex;
+  align-items: center;
+  color: #434c55;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Proxima Nova Light;
+}
+
+a {
+  text-decoration: none;
+}
+
+.render-list,
+.user-name,
+.user-total {
+  width: 31.22%;
+  margin: 0 5px 0 5px;
+  text-align: center;
+}
+
+.user-name {
+  text-align: center;
+}
+
+.user-total {
+  text-align: right;
+}
+
+.cate-img {
+  width: 100px;
+}
+
+.category-bottom {
+  position: fixed;
+  opacity: 0.8;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #60b524;
+}
+
+.icon-back {
+  color: antiquewhite;
+  display: inline;
+  text-decoration: none;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #60b524;
+}
+
+.exp {
+  display: flex;
+  background-color: #3175be;
+  text-align: center;
+}
+
+.heading-exp {
+  width: 70%;
+  text-align: center;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: Proxima Nova Light;
+  color: aliceblue;
+}
+
+.exp-each {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  border: 2px solid black;
+  padding-top: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: #3f6fb6 !important;
+}
+
+.exp-form {
+  background-color: #3678c2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#expenditure_name,
+#expenditure_amount,
+#category_name,
+#category_icon {
+  width: 100%;
+}
+
+.back-tag {
+  color: aliceblue;
+}
