@@ -21,18 +21,6 @@ class ExpendituresController < ApplicationController
   # GET /expenditures/1/edit
   def edit; end
 
-  # POST /expenditures or /expenditures.json
-  # def create
-  #   @category = Category.find(params[:category_id])
-  #   @expenditure = current_user.expenditures.new(expenditure_params)
-  #   if @expenditure.save
-  #       flash[:notice] = 'Category was successfully created.'
-  #   else
-  #     flash.now[:notice] = 'Failed to created'
-  #   end
-  #     redirect_to category_expenditures_url
-  # end
-
   def create
     @expenditure = Expenditure.new(expenditure_params)
     @expenditure.user_id = current_user.id
