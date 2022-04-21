@@ -1,0 +1,31 @@
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="loginpage">
+    <a href="/" class="back-tag">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+    </a>
+    <h2 class="heading-cate">LOGIN</h2>
+    <div class="actions">
+      <%= f.submit "Log in" %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password"  %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field footer">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+ 
+<% end %>
+<div class="footer">
+<%= render "devise/shared/links" %>
+</div>
