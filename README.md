@@ -8,7 +8,7 @@
 
 ## Screenshots
 
-![image](./budgetapp.png)
+![image](app/assets/images/Capture.PNG)
 
 ## Built With
 
@@ -16,11 +16,11 @@
 
 ## ## Presentation Link
 
-[Presentation Video](https://www.loom.com/)
+[Presentation Video](https://www.loom.com/share/c32ee9b1f06e497f95acc08e19a25d4c)
 
 #### Demo Link
 
-[App Link](https://.herokuapp.com/)
+[App Link](https://bajat.herokuapp.com/)
 
 ## Getting Started
 
