@@ -1,0 +1,14 @@
+<div class="container-sm">
+	<div class="is-flex flex-grow-1 justify-content-center align-items-center">
+	
+	  <div class="img-fluid text-center">
+        <%= image_tag("budget.png", width:'auto', height:'100px') %>
+		<h1 class="heading text-center">budget</h1>
+		
+      </div>
+	</div>
+	<div class=" d-grid gap-2 col-6 mx-auto is-flex flex-direction-column buttons ">
+		<p class="row justify-content-center"><%= link_to 'Log in', new_user_session_url, class: "btn btn-success" %></p>
+		<p class="row justify-content-center"><%= link_to 'Sign up', new_user_registration_url, class: "btn btn-primary" %></p>
+	</div>
+</div>

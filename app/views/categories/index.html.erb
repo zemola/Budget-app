@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+  <div class="category container-sm">
+      <h1 class="heading-cate">CATEGORIES</h1>
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "login cate" %>
+  </div>
+  <% @categories.each do |category| %>
+    <div id="categories" class="category-page">
+        <a href = "/categories/<%= category.id %>/expenditures" >
+      <div class="cate-name">
+        <%= render category %>
+      <p class="user-name"><%= @user.name %> </p>
+      <p class="user-total"> Total:$<%= category.total_funds %> </p>
+      </div>
+    </div>
+  <% end %>
+<div class="category-bottom">
+<%= link_to "Add New category", new_category_path, class: " bottom btn btn-success" %>
+</div>
